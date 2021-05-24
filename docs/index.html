@@ -1,0 +1,196 @@
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Holistic 3D Human and Scene Mesh Estimation from Single View Images </title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+
+  <!-- Google Analytics -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <script async="" src="//www.google-analytics.com/analytics.js"></script><script> -->
+  <!-- function page_loaded() { -->
+  <!-- } -->
+  </script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <style type="text/css">
+    .normal {
+      font-size: 20px;
+    }
+  .center{
+    margin: auto;
+    text-align:left;
+    position: relative;
+    width:800px;
+  }
+  .center_vid{
+    margin: 0 auto;
+    display: block;
+  }
+  button{
+    margin:auto;
+    margin-top:10px;
+    margin-bottom:10px;
+    display:block;
+  }
+  canvas{
+    margin:auto;
+    position:relative;
+    display:block;
+  }
+  </style>
+</head>
+<!-- <body onload="page_loaded()" cz-shortcut-listen="true">
+ -->
+<div id="header">
+  <a href="https://marvl.stanford.edu/index.html">
+    <img src="img/marvl.png" style="height:90px; float: left; margin-left: 50px; margin-top:20px;">
+  </a>
+  <a href="http://stanford.edu/">
+    <img src="img/Stanford.png" style="height:100px; float: right; margin-right: 90px; margin-top:20px;">
+  </a>
+
+  <br>
+  <center>
+    <span style="font-size:30px; font-family:\"Book Antiqua\", Sans-serif,serif;">Holistic 3D Human and Scene Mesh Estimation from Single View Images</span>
+    <br>
+    <span style="font-size:25px; font-family:\"Book Antiqua\", Sans-serif,serif;"><a href="http://cvpr2021.thecvf.com/">CVPR 2021</a></span>
+  </center>
+  <br>
+
+
+</div>
+
+<br>
+
+<br>
+<div class="sechighlight">
+  <h2 style="font-size:25px; font-family:Verdana, Geneva, sans-serif;">Abstract</h2>
+<div class="abstract">
+  The 3D world limits the human body pose and the human body pose conveys information about the surrounding
+objects. Indeed, from a single image of a person placed in
+an indoor scene, we as humans are adept at resolving ambiguities of the human pose and room layout through our
+knowledge of the physical laws and prior perception of the
+plausible object and human poses. However, few computer
+vision models fully leverage this fact. In this work, we propose a holistically trainable model that perceives the 3D
+scene from a single RGB image, estimates the camera pose
+and the room layout, and reconstructs both human body
+and object meshes. By imposing a set of comprehensive
+and sophisticated losses on all aspects of the estimations,
+we show that our model outperforms existing human body
+mesh methods and indoor scene reconstruction methods. To
+the best of our knowledge, this is the first model that outputs
+both object and human predictions at the mesh level, and
+performs joint optimization on the scene and human poses.
+</div>
+</div>
+
+<div style="justify-content: center;">
+  <div>
+      <video id="demo-video" class="center_vid" controls muted preload="auto" width="800" height="450" data-setup="{}">
+        <source id="source0" src=video_720p.mp4 type=video/mp4>
+      </video>
+  </div>
+
+
+  <br>
+
+  <div class="author_container">
+    <div class="author">
+      <a href="https://zzweng.github.io/">
+      <div class="authorphoto"><img src="img/jen_34.png"></div>
+      <p>Zhenzhen Weng</p>
+      </a>
+    </div>
+    <div class="author">
+      <a href="http://ai.stanford.edu/~syyeung/">
+      <div class="authorphoto"><img src="img/serena_yeung_34.jpg"></div>
+      <div>Serena Yeung</div>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<div class="sechighlight">
+<div class="container sec" style="font-size:18px">
+  <div class="row">
+
+    <div class="col-md-6">
+      <h2>Paper</h2>
+      <a href="https://arxiv.org/pdf/2012.01591.pdf">
+        <img style="width: 400px" src="img/paper2.png">
+        <p>Download the paper here.<p>
+      </a>
+    </div>
+    <div class="col-md-6">
+      <h2>Bibtex</h2>
+<pre style="font-size:12px;">
+@article{weng2020holistic,
+  title={Holistic 3D Human and Scene Mesh Estimation from Single View Images},
+  author={Weng, Zhenzhen and Yeung, Serena},
+  journal={arXiv preprint arXiv:2012.01591},
+  year={2020}
+}
+</pre>
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+<!-- jQuery and Boostrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<!-- Analytics -->
+<script>
+</script>
+
+<div></div>
+<script>
+    var selected_set = ['v_XKOeu8n7R7s', 'v_G3xayqdY0TY','v_Pi79Fa4YwDk','v_KV0L45xelkE','v_8miqQQJEsO0','v_I6nuNE-Qibw','v_9PuaRdU6ViM','v_voaGOm-rl9Y','v_rDlPcW_2nG0','v_NSegylr0MBg']
+    var dataUrl = "web_demo.json";
+    var data = [];
+    var times = [];
+    console.log(Object.keys(data).length);
+
+    // Get elements
+    // Initial constant setup
+    var total_num = selected_set.length;
+    var v_start = 50;
+    var space_between = 10;
+    var stroke_size = 10;
+    var video_num = 0;
+    // Total width of the play, volume, time and maximize button of video control bar
+    // Constant, independent of window size
+    var left_width = 108;
+    var right_width = 188;
+
+    var cur_vid = ""
+    var cur_timestamps = [];
+    var cur_descriptions = [];
+    var badlist = [];
+
+    function prepareData(index){
+        cur_vid = selected_set[video_num];
+        cur_timestamps = data[cur_vid]['timestamps'];
+        cur_descriptions = data[cur_vid]['sentences'];
+      }
+
+    var colors = ["#FFFF00", "#1CE6FF", "#FF34FF", "#FF4A46", "#008941", "#006FA6", "#A30059","#FFDBE5", "#7A4900", "#0000A6", "#63FFAC", "#B79762", "#004D43", "#8FB0FF", "#997D87","#5A0007", "#809693", "#FEFFE6", "#1B4400", "#4FC601", "#3B5DFF", "#4A3B53", "#FF2F80","#61615A", "#BA0900", "#6B7900", "#00C2A0", "#FFAA92", "#FF90C9", "#B903AA", "#D16100","#DDEFFF", "#000035", "#7B4F4B", "#A1C299", "#300018", "#0AA6D8", "#013349", "#00846F","#372101", "#FFB500", "#C2FFED", "#A079BF", "#CC0744", "#C0B9B2", "#C2FF99", "#001E09","#00489C", "#6F0062", "#0CBD66", "#EEC3FF", "#456D75", "#B77B68", "#7A87A1", "#788D66","#885578", "#FAD09F", "#FF8A9A", "#D157A0", "#BEC459", "#456648", "#0086ED", "#886F4C","#34362D", "#B4A8BD", "#00A6AA", "#452C2C", "#636375", "#A3C8C9", "#FF913F", "#938A81","#575329", "#00FECF", "#B05B6F", "#8CD0FF", "#3B9700", "#04F757", "#C8A1A1", "#1E6E00","#7900D7", "#A77500", "#6367A9", "#A05837", "#6B002C", "#772600", "#D790FF", "#9B9700","#549E79", "#FFF69F", "#201625", "#72418F", "#BC23FF", "#99ADC0", "#3A2465", "#922329","#5B4534", "#FDE8DC", "#404E55", "#0089A3", "#CB7E98", "#A4E804", "#324E72", "#6A3A4C"];
+    
+  </script>
+</body>
+</html>
