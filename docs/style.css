@@ -1,0 +1,106 @@
+body{  
+/*    font-family:Georgia, Arial, Helvetica, Sans-serif,serif;*/
+    font-family:"Book Antiqua", Sans-serif,serif;
+    font-size:15px;
+    color:#000;
+    background:#fff;
+}
+ 
+h1 {
+    font-family:"Book Antiqua", Sans-serif,serif;
+    font-size:40px;
+}
+ 
+h2 {
+    font-family:Verdana, Geneva, sans-serif;
+}
+
+h3 {
+    font-size:22px;
+}
+
+
+#content-wrapper {
+    width:960px;
+    text-align:left;
+    margin:0 auto;
+    background:#fff;
+    padding:15px;
+     
+}
+ 
+#post-content {
+    float:left;
+    width:600px;
+    padding:0 15px 15px 15px;
+}
+ 
+.sidebar{
+    float:left;
+    width:300px;
+    margin:0 0 0 15px;
+    font-size:15px;
+    list-style:none;
+}
+ 
+#footer{
+    height: 60px;
+    background: #fff;
+    padding: 15px;
+    clear:both;
+}
+
+
+.author_container
+{
+    padding-left: 140px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center
+    /*align-content: center;*/
+}
+
+.author{
+    display:inline;
+    width: 140px;
+    margin: 10px;
+    text-align: center;
+}
+
+.author img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 130px;
+    height: 174px;
+    display:inline,
+}
+
+.authorphoto{
+    margin: 5px;
+    display:inline;
+    /*height: ;*/
+}
+
+.authorname{
+    margin: 5px;
+    display:inline;
+    /*height: ;*/
+}
+
+.abstract{
+    font-size:14px;
+    font-family:Verdana, Geneva, sans-serif;
+}
+
+.sechighlight{
+    background-color: lavenderblush;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    align-items: center;
+}
